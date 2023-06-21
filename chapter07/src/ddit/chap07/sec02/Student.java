@@ -21,7 +21,7 @@ public class Student extends Person {
 	
 	public void calculateScore() {
 		sum = kor + eng + mat;
-		avg = (kor + eng + mat)/3;
+		avg = (kor + eng + mat)/(double)3;
 	}
 	
 	public void printScore() {
