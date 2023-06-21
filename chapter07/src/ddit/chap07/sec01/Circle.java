@@ -6,7 +6,7 @@ public class Circle extends Shape {
 	Point center;
 	
 	//Shape() {} 떄문에 사용 가능
-	//  => 매개변수 없는 super(); => 매개변수 default 생성사 호출
+	//  => 매개변수 없는 super(); => 매개변수 default 생성시 호출
 	//  ==> 매개변수 없는 거 미리 써놔야 함
 	Circle(){  		//Circle(){super()} 인데 생략되어 있음
 		center = new Point();

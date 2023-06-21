@@ -5,8 +5,9 @@ public class Customer {
 	private int bonusPoint;
 	private String items = "";
 	
-	//´ÙÇü¼º upcasting Å¬·¡½º Çüº¯È¯
-	//¾È ¾²¸é buy¸Þ¼Òµå Ç°¸ñ °³¼ö¸¸Å­ ¸¸µé¾î¾ß µÊ
+	
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ upcasting Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È¯
+	//ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ buyï¿½Þ¼Òµï¿½ Ç°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 	public void buy(Goods good) {
 		sum = sum + good.price;
 		bonusPoint = bonusPoint + good.bonusPoint;
@@ -14,8 +15,8 @@ public class Customer {
 	}
 	
 	public void summary() {
-		System.out.println("±¸¸ÅÇÕ°è: " + sum);
-		System.out.println("º¸³Ê½ºÆ÷ÀÎÆ®: " + bonusPoint);
-		System.out.println("±¸¸ÅList: " + items);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Õ°ï¿½: " + sum);
+		System.out.println("ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®: " + bonusPoint);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½List: " + items);
 	}
 }

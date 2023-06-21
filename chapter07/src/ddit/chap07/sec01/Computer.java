@@ -5,6 +5,7 @@ public class Computer extends Goods{
 		super(price);
 	}
 	
+	
 	@Override
 	public String toString() {
 		return "gram17";

@@ -4,14 +4,15 @@ public class HimartExample {
 
 	public static void main(String[] args) {
 		Tv tv = new Tv(1500);
-		System.out.println(tv); 	 //toString »ý·«µÇ¾î ÀÖ¾î¼­ ±× °ª ¹ÝÈ¯ÇÔ
+		System.out.println(tv); 	 //toString ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ ï¿½Ö¾î¼­ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½
 		System.out.println(tv.price);
 		System.out.println(tv.bonusPoint);
 		
 		Customer gil = new Customer();
-		gil.buy(new Computer(2000)); //¹Ù·Î °´Ã¼ »ý¼º
-		gil.buy(tv);  				 //Á÷Á¢ º¯¼ö ³Ö¾îÁàµµ µÊ
-		gil.summary(); 				 //Ç°¸ñ ¿ä¾à
+		gil.buy(new Computer(2000)); //ï¿½Ù·ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½
+		gil.buy(tv);  				 //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½àµµ ï¿½ï¿½
+		gil.summary(); 				 //Ç°ï¿½ï¿½ ï¿½ï¿½ï¿½
+		
 		
 		Audio au = new Audio(300);
 		System.out.println(au);
