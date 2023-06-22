@@ -1,7 +1,7 @@
 package ddit.chap07.sec02;
-//¹®Á¦) ºÎ¸ğÅ¬·¡½º - »ç¶÷Å¬·¡½º(Person)
-//		¼Ó¼º : ÀÌ¸§(name), ³ªÀÌ(age)
-//		¸Å¼­µå : »ı¼ºÀÚ ¹× ÀÌ¸§À» Ãâ·ÂÇÏ´Â ¸Ş¼­µå(getName())
+// (Person)
+//	(name), (age)
+//		(getName())
 
 public class Person {
 	String name;
@@ -14,7 +14,7 @@ public class Person {
 	}
 	
 	public void getName(){
-		System.out.println("ÀÌ¸§: " + name);
-		System.out.println("³ªÀÌ: " + age);
+		System.out.println("ì´ë¦„: " + name);
+		System.out.println("ë‚˜ì´: " + age);
 	}
 }

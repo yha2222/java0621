@@ -7,11 +7,11 @@ public class KakaoSend extends SendMessage {
 	
 	@Override
 	public void sendMessage() {
-		System.out.println(receiver + "¿¡°Ô Ä«ÅåÀ¸·Î "+ content + "¸¦ º¸³»´Ù");
+		System.out.println(receiver + "ì—ê²Œ ì¹´í†¡ìœ¼ë¡œ "+ content + "ë¥¼ ë³´ë‚´ë‹¤.");
 	}
 	
 	@Override
-	public void reserveMessage() {
-		System.out.println(sender + "·ÎºÎÅÍ Ä«ÅåÀ» ¹Ş´Ù. ³»¿ëÀº " + content);
+	public void receiveMessage() {
+		System.out.println(sender + "ë¡œë¶€í„° ì¹´í†¡ì„ ë°›ë‹¤. <" + content+">");
 	}
 }

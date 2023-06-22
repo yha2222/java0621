@@ -1,8 +1,8 @@
 package ddit.chap07.sec02;
-//ÀÚ½ÄÅ¬·¡½º - ÇĞ»ıÅ¬·¡½º(Student)
-//¼Ó¼º : ±¹¾î(kor), ¿µ¾î(eng), ¼öÇĞ(mat) ¼ºÀû
-//¸Å¼­µå : »ı¼ºÀÚ, ÃÑÁ¡°ú Æò±ÕÀ» ±¸ÇÏ´Â ¸Ş¼­µå(calculateScore())
-//		, ¼ºÀûÇ¥ Ãâ·Â ¸Ş¼­µå(printScore()) - ºÎ¸ğÅ¬·¡½º getName() »ç¿ë
+//(Student)
+//(kor), (eng), (mat) 
+//(calculateScore())
+//		(printScore()) - ï¿½getName()
 
 public class Student extends Person {
 	int sum;
@@ -26,9 +26,9 @@ public class Student extends Person {
 	
 	public void printScore() {
 		getName();
-		System.out.println("±¹¾î: "+kor+" |¿µ¾î: "+eng+" |¼öÇĞ: "+mat);
-		System.out.println("ÃÑÁ¡: " + sum);
-		System.out.println("Æò±Õ: " + avg);
+		System.out.println("êµ­ì–´ : "+kor+" | ì˜ì–´: " + eng + " | ìˆ˜í•™: " + mat);
+		System.out.println("ì´ì : "+sum);
+		System.out.println("í‰ê· : " + avg);
 		
 	}
 }

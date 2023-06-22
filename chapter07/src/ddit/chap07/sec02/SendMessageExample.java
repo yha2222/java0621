@@ -1,19 +1,32 @@
 package ddit.chap07.sec02;
 
+import ddit.chap07.sec01.Prac02;
+import ddit.chap07.sec01.Prac03;
+import ddit.chap07.sec01.Prac04;
+
 public class SendMessageExample {
 
 	public static void main(String[] args) {
-		KakaoSend ks = new KakaoSend("a@naver.com", "z.daum.net", "Áı¿¡ ÀÏÂï °¡ÀÚ...");
-		ks.sendMessage();
-		
-		String s = "jslee@naver.com";
-		String r = "ddit405@ddit.or.kr";
-		
-		EmailSend es = new EmailSend(s, r, "¿À´Ã È¸½ÄÀÖ½À´Ï´Ù...", "È¸½Ä°øÁö");
-		es.reserveMessage();
-		
-		LetterSend ls = new LetterSend(s, r, "¿À´Ã È¸½Ä ÀÖ½À´Ï´Ù...");
-		ls.reserveMessage();
+				//KakaoSend
+				KakaoSend kakao = new KakaoSend("muji", "lion", "ì•ˆë…•íˆ ê°€ì„¸ìš”");
+				kakao.sendMessage();
+				kakao.receiveMessage();
+				System.out.println();
+				
+				//EmailSend
+				String sen = "asd@asdgf.com";
+				String rec = "qwer@asdf.com";
+				
+				EmailSend email = new EmailSend(sen, rec, "ì•ˆë…•í•˜ì„¸ìš”", "ê°ì‚¬í•´ìš”");
+				email.receiveEmail();
+				email.sendEmail();
+				System.out.println();
+				
+				//LetterSend
+				LetterSend letter = new LetterSend(sen, rec, "ì•ˆë…•í•˜ì„¸ìš”");
+				letter.receiveMessage();
+				letter.sendMessage();
+				System.out.println();
 
 	}
 
