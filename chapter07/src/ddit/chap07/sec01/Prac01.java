@@ -1,6 +1,7 @@
 package ddit.chap07.sec01;
 
 public class Prac01 {
+	//Shape
 	String color;
 	String kind;
 	
@@ -11,6 +12,7 @@ public class Prac01 {
 	}
 	
 	public void draw() {
-		System.out.println(color + " »ö»óÀÎ " + kind +"ÇüÀ» ±×¸°´Ù");
+		System.out.println(color + "ì¸ " + kind + "í˜•ì„ ê·¸ë¦°ë‹¤.");
 	}
+	
 }

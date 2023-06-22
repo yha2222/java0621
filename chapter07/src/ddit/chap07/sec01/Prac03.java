@@ -1,11 +1,13 @@
 package ddit.chap07.sec01;
 
 public class Prac03 {
+	
+	//Point
 	private int x;
 	private int y;
 	
 	Prac03(){
-		this(0,0);
+		this(0, 0);
 	}
 	
 	Prac03(int x, int y){
@@ -14,6 +16,6 @@ public class Prac03 {
 	}
 	
 	public String getLocation() {
-		return "(" +x+ ", " +y+ ")";
+		return "("+x+", "+y+")";
 	}
 }

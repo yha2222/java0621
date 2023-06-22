@@ -2,17 +2,16 @@ package ddit.chap07.sec01;
 
 public class Shape {
 	String color;
-	String kind; //µµÇü Á¾·ù
+	String kind;
 	
-	Shape() {}
+	Shape(){}
 	Shape(String color, String kind){
 		this.color = color;
 		this.kind = kind;
 	}
 	
 	public void draw() {
-		System.out.println(color + "»ö»óÀÇ " + kind + " µµÇüÀ» ±×¸®´Ù.");
+		System.out.println(color + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + kind + " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½.");
 	}
 	
-	//»ó¼Ó
 }

@@ -5,7 +5,6 @@ public class Audio extends Goods {
 		super(price);
 	}
 	
-	
 	@Override
 	public String toString() {
 		return "Marshell";

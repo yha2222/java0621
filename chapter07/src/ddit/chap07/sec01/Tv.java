@@ -10,7 +10,6 @@ public class Tv extends Goods {
 		super(price);
 	}
 	
-	
 	@Override
 	public String toString() {
 		return "ThinQ TV";

@@ -13,7 +13,6 @@ public class HimartExample {
 		gil.buy(tv);  				 //���� ���� �־��൵ ��
 		gil.summary(); 				 //ǰ�� ���
 		
-		
 		Audio au = new Audio(300);
 		System.out.println(au);
 		System.out.println(au.price);

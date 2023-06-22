@@ -12,8 +12,8 @@ public class ShapeExample {
 		c1.kind = "rectangle";
 		c1.draw();
 		
-		//Circle Å¬·¡½º °´Ã¼ »ý¼º
-		Circle c2 = new Circle(10,"white", "¿ø", new Point(300, 500));
+		//Circle
+		Circle c2 = new Circle(10,"white", "ï¿½ï¿½", new Point(300, 500));
 		c2.draw();
 		c2.getArea();
 	}

@@ -1,27 +1,23 @@
 package ddit.chap07.sec01;
 
 public class Circle extends Shape {
-	//»ó¼Ó ¾Æ´Ô
+
 	int radius;
 	Point center;
 	
-	//Shape() {} ‹š¹®¿¡ »ç¿ë °¡´É
-	//  => ¸Å°³º¯¼ö ¾ø´Â super(); => ¸Å°³º¯¼ö default »ý¼º½Ã È£Ãâ
-	//  ==> ¸Å°³º¯¼ö ¾ø´Â °Å ¹Ì¸® ½á³ö¾ß ÇÔ
-	Circle(){  		//Circle(){super()} ÀÎµ¥ »ý·«µÇ¾î ÀÖÀ½
+	Circle(){  		//Circle(){super()}
 		center = new Point();
 	}  
-	Circle(int radius, String color, String kind, Point center) {  //ÀÚ½Ä Å¬·¡½º¸¸ °®°í ÀÖ´Â °ª
-		super(color, kind);  //Shape(String color){...}È£Ãâ
+	Circle(int radius, String color, String kind, Point center) {
+		super(color, kind);  //Shape(String color)
 		this.radius = radius;
 		this.center = center;
 	}
 	
-	//»ó¼Ó ¾Æ´Ï°í °íÀ¯ ¸Þ¼Òµå
 	public void getArea() {
 		double area = radius * radius * 3.1415926;
-		System.out.println("Áß½ÉÁ¡ÀÇ ÁÂÇ¥: " + center.getLocation());
-		System.out.println("¹ÝÁö¸§: " + radius);
-		System.out.println("¿øÀÇ ¸éÀû: " + area);
+		System.out.println("ï¿½ß½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥: " + center.getLocation());
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: " + radius);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: " + area);
 	}
 }

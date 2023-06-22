@@ -5,7 +5,6 @@ public class Customer {
 	private int bonusPoint;
 	private String items = "";
 	
-	
 	//������ upcasting Ŭ���� ����ȯ
 	//�� ���� buy�޼ҵ� ǰ�� ������ŭ ������ ��
 	public void buy(Goods good) {
