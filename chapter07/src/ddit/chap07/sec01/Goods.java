@@ -1,8 +1,6 @@
 package ddit.chap07.sec01;
 
-//�θ� Ŭ����
 public class Goods {
-	//��� ��Ű���� �ֵ� ������� �������� ���� ����
 	protected int price;
 	protected int bonusPoint;
 

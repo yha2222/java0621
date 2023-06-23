@@ -4,14 +4,17 @@ public class HimartExample {
 
 	public static void main(String[] args) {
 		Tv tv = new Tv(1500);
-		System.out.println(tv); 	 //toString �����Ǿ� �־ �� �� ��ȯ��
+		Goods g1 = new Tv(2000); //다형성 - 매개변수로 구현
+		System.out.println(tv); 	 
 		System.out.println(tv.price);
 		System.out.println(tv.bonusPoint);
 		
 		Customer gil = new Customer();
-		gil.buy(new Computer(2000)); //�ٷ� ��ü ����
-		gil.buy(tv);  				 //���� ���� �־��൵ ��
-		gil.summary(); 				 //ǰ�� ���
+		gil.buy(new Computer(2000)); //Customer.buy()
+		gil.buy(tv);  		
+		gil.buy(g1); //다형성
+		gil.buy(new Audio(500));
+		gil.summary(); 				 
 		
 		Audio au = new Audio(300);
 		System.out.println(au);

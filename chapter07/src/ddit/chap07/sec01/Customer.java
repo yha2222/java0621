@@ -5,8 +5,7 @@ public class Customer {
 	private int bonusPoint;
 	private String items = "";
 	
-	//������ upcasting Ŭ���� ����ȯ
-	//�� ���� buy�޼ҵ� ǰ�� ������ŭ ������ ��
+	//세 개 따로 안 만들고 부모 써서 하나로 퉁침 => 개수는 이제 상관없다
 	public void buy(Goods good) {
 		sum = sum + good.price;
 		bonusPoint = bonusPoint + good.bonusPoint;

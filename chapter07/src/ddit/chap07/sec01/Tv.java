@@ -1,12 +1,11 @@
 package ddit.chap07.sec01;
 
 public class Tv extends Goods {
-	//�θ�Ŭ������ �Ű����� �����ϱ� �����ڿ� �˸��� ���·� �����ض�
-	//Goods��� �޼ҵ� ������ ���� �� ��
+	//Goods
 	
-	//int price - ��ӿ�
+	//int price
 	Tv(int price){
-		//Goods Ŭ���� ���� - �θ� �����ߴ� ��� �ٽ� ����
+		//Goods
 		super(price);
 	}
 	
