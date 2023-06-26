@@ -1,33 +1,26 @@
 package ddit.chap07.sec01;
-//2. 자식클래스
-//1)정규직사원(RegularEmployee)
-//	- 속성 : 보너스(bonus : int)
-//		       직책(jobTitle : String)
-//		       연봉(totalSalaryPerYear : int)
-//	- 메서드 : 정보출력(getInfo() : void)
-//			 급여계산(calcSalary() : int)
-public class Prac02 extends Prac01 {
-	//RegularEmployee
-	private int bonus;
-	private String jobTitle;
-	private int totalSalaryPerYear;
+
+public class Prac02 {
+	//Car
+	//필드
+	Prac01 frontLeftTire = new Prac01("앞왼쪽", 6);
+	Prac01 frontRightTire = new Prac01("앞오른쪽", 2);
+	Prac01 backLeftTire = new Prac01("뒤왼쪽", 3);
+	Prac01 backRightTire = new Prac01("뒤오른쪽", 4);
 	
-	Prac02(){}
-	Prac02(long empID, String empName,int bonus, String jobTitle, int totalSalaryPerYear){
-		super(empID, empName);
-		this.bonus = bonus;
-		this.jobTitle = jobTitle;
-		this.totalSalaryPerYear = totalSalaryPerYear;
+	//생성자
+	//메소드
+	int run() {
+		System.out.println("[자동차가 달립니다.]");
+		if(frontLeftTire.roll() == false) {stop(); return 1;}
+		if(frontRightTire.roll() == false) {stop(); return 2;}
+		if(backLeftTire.roll() == false) {stop(); return 3;}
+		if(backRightTire.roll() == false) {stop(); return 4;}
+		return 0;
 	}
 	
-	public int calcSalary() {
-		return (totalSalaryPerYear+bonus)/12;
+	void stop() {
+		System.out.println("[자동차가 멈춥니다.]");
 	}
 	
-	@Override
-	public void printInfo() {
-		super.printInfo();
-		System.out.println("월급: "+ calcSalary());
-		System.out.println("직책: " + jobTitle);
-	}
 }
