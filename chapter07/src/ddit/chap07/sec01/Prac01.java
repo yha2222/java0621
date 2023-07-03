@@ -11,6 +11,7 @@ public class Prac01 {
 	public Prac01(String location, int maxRotation) {  
 		this.maxRotation = maxRotation; //필드 초기화
 		this.location = location;
+		
 	}
 	
 	//메소드

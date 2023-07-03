@@ -25,6 +25,7 @@ public class HimartExample {
 		System.out.println(com);
 		System.out.println(com.price);
 		System.out.println(com.bonusPoint);
+		
 	}
 
 }

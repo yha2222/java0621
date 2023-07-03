@@ -1,7 +1,6 @@
 package ddit.chap07.sec08;
 
 public class HttpServletExample {
-
 	public static void main(String[] args) {
 		init(new LoginServlet());
 		//HttpServlet servlet = new LoginServlet();
@@ -16,5 +15,4 @@ public class HttpServletExample {
 	public static void init(HttpServlet servlet) {
 		servlet.service(); //추상메서드로 정의해놓은 것
 	}
-
 }

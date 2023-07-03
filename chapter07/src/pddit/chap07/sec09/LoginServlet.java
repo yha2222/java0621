@@ -1,8 +1,8 @@
-package ddit.chap07.sec08;
+package pddit.chap07.sec09;
 
 public class LoginServlet extends HttpServlet {
 	@Override
 	public void service() {
-		System.out.println("로그인을 합니다.");
+		System.out.println("로그인 합니다.");
 	}
 }

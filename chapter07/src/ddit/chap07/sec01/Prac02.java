@@ -19,6 +19,7 @@ public class Prac02 {
 		return 0;
 	}
 	
+	
 	void stop() {
 		System.out.println("[자동차가 멈춥니다.]");
 	}

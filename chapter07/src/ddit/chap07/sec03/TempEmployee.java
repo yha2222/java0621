@@ -22,7 +22,7 @@ public class TempEmployee extends Employees {
 	
 	@Override
 	public void getInfo() {
-		super.getInfo();
+		getInfo();
 		System.out.println("시급: " + payAnHourly);
 		System.out.println("월 근무시간: " + workingHoursPerMonth);
 		System.out.println("월 지급액: " + calcSalary());

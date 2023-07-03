@@ -6,6 +6,7 @@ public class PracExample {
 		Prac02 car = new Prac02();
 		
 		for(int i = 1; i<=5; i++) {
+			
 			int problemLocation = car.run();  
 			
 			switch(problemLocation) {
